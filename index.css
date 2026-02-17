@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     --primary-bg-color:#F9F0E7;
     --primary-text-color:#5F5F5F;
@@ -11,6 +13,7 @@
     --color-purple:#826DFA;
     --color-light-pink:#F9F0E7;
     --link-color:#171717;
+    font-family: 'Poppins';
 }
 body{
     margin: 0;
@@ -33,7 +36,14 @@ a{
 .header{
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+
+    nav ul{
+         gap:4rem;
+    }
+}
+.header .navigation{
+    font-weight: bold;
 }
 .icon-container{
     height: 24px;
@@ -42,6 +52,7 @@ a{
 }
 .nav-container{
     background-color: var(--primary-bg-color);
+    padding: 1rem var(--section-padding);
 }
 .main-container{
     /* padding: 1rem 2rem; */
@@ -56,6 +67,9 @@ a{
 }
 figure{
     margin: 0;
+}
+span img{
+    cursor: pointer;
 }
 .big-image-container{
     height: 40rem;
@@ -150,6 +164,7 @@ figure{
     padding: 0rem 2rem;
 }
 .card{
+    position: relative;
     background-color: var(--card-bg-color);
     border-radius: var(--border-radius-8);
     width: 25rem;
@@ -213,4 +228,15 @@ figure{
             cursor: pointer;
         }
     }
+}
+
+#discount{
+    position: absolute;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    top: 15px;
+    right: 15px;
+    padding: 1rem 0.5rem;
+    color: white;
 }

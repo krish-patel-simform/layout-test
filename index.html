@@ -17,25 +17,26 @@
             <span class="logo-image-container">
                 <img src="./public/images/logo.png" height="100%" width="100%">
             </span>
-            <ul class="flex gap-1 space-between align-item-center">
+            <nav class="flex">
+                <ul class="flex  space-between align-item-center navigation">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contat</a></li>
-            </ul>
-            <ul class="flex gap-1 align-item-center">
-                <li><span class="icon-container"><img src="./public/images/user.svg"></span></li>
+                </ul>
+            </nav>
+            <ul class="flex gap-2 align-item-center">
+                <li><span class="icon-container"><img src="./public/images/user.svg"  height="100%" width="100%"></span></li>
                 <li><span class="icon-container" ><img src="./public/images/heart.png" height="100%" width="100%"></span></li>
                 <li><span class="icon-container" ><img src="./public/images/search_icon.png" height="100%" width="100%"></span></li>
-                <li><span class="icon-container" ><img src="./public/images/store.svg"></span></li>
+                <li><span class="icon-container" ><img src="./public/images/store.svg"  height="100%" width="100%"></span></li>
             </ul>
         </header>
-        <nav></nav>
     </section>
     <main class="main-container">
 
         <!-- section 1 -->
-        <section class="flex nav-container p1rem">
+        <section class="flex nav-container">
             <div class="flex align-item-center page-name">
                 Home <span class="icon-container"><img src="./public/images/right.png" height="100%" width="100%"></span>
             </div>
@@ -89,18 +90,18 @@
                 <div>
                     <p class="secondary-p">Size</p>
                     <div aria-label="sizes" class="flex gap-1">
-                        <div class="flex justify-center align-item-center bg-orange sizes-box">L</div>
-                        <div class="flex justify-center align-item-center bg-light-pink sizes-box">XL</div>
-                        <div class="flex justify-center align-item-center bg-light-pink sizes-box  ">XS</div>
+                        <div aria-label="large" class="flex justify-center align-item-center bg-orange sizes-box pointer">L</div>
+                        <div aria-label="Xtra large" class="flex justify-center align-item-center bg-light-pink pointer sizes-box">XL</div>
+                        <div aria-label="Xtra Small" class="pointer flex justify-center align-item-center bg-light-pink sizes-box  ">XS</div>
                     </div>
                 </div>
 
                 <div>
                     <p class="secondary-p">Color</p>
                     <div aria-label="sizes" class="flex gap-1">
-                        <div class="circle flex justify-center align-item-center bg-purple sizes-box"></div>
-                        <div class="circle flex justify-center align-item-center bg-black sizes-box"></div>
-                        <div class="circle flex justify-center align-item-center bg-orange sizes-box"></div>
+                        <div class="pointer circle flex justify-center align-item-center bg-purple sizes-box"></div>
+                        <div class="pointer circle flex justify-center align-item-center bg-black sizes-box"></div>
+                        <div class="pointer circle flex justify-center align-item-center bg-orange sizes-box"></div>
                     </div>
                 </div>
 
@@ -187,8 +188,9 @@
         <section class="flex flex-col gap-1">
             <h2 class="flex justify-center">Related Products</h2>
 
-            <div class="flex flex-wrap gap-1 space-around">
+            <div class="flex flex-wrap gap-1 space-betwwen">
                 <article class="card">
+                    <div id="discount" class="circle bg-purple">-30%</div>
                     <!-- imag -->
                     <figure>
                         <img src="./public/images/list_table.webp" alt="list item 1" height="100%" width="100%">
@@ -209,6 +211,7 @@
                 </article>
                 
                <article class="card">
+
                     <!-- imag -->
                     <figure>
                         <img src="./public/images/list_chair.webp" alt="list item 1" height="100%" width="100%">
@@ -229,6 +232,7 @@
                 </article>
                 
                 <article class="card">
+                    <div id="discount" class="circle bg-purple">-30%</div>
                     <!-- imag -->
                     <figure>
                         <img src="./public/images/list_sofa_table.webp" alt="list item 1" height="100%" width="100%">
@@ -249,6 +253,7 @@
                 </article>
                 
                 <article class="card">
+                    <div id="discount" class="circle bg-orange">New</div>
                     <!-- imag -->
                     <figure>
                         <img src="./public/images/list_sofa.webp" alt="list item 1" height="100%" width="100%">
