@@ -19,3 +19,34 @@
 .align-item-center{
     align-items: center;
 }
+.p1rem{
+    padding: 1rem;
+}
+.flex-col{
+    flex-direction: column;
+}
+.secondary-p{
+    color: var(--secondary-text-color);
+    margin: 8px 0;
+}
+.bg-orange{
+    background-color: #B98E2F;
+}
+.bg-purple{
+    background-color: #826DFA;
+}
+.bg-black{
+    background-color: #000;
+}
+.bg-light-pink{
+    background-color: #F9F0E7;
+}
+.gap-02{
+    gap:0.2rem;
+}
+.gap-05{
+    gap:0.5rem;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}

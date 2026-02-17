@@ -32,16 +32,117 @@
         </header>
         <nav></nav>
     </section>
-    <main>
+    <main class="main-container">
 
         <!-- section 1 -->
-        <section class="flex nav-container">
-            <div>Home ></div>
-            <div>Shop ></div>
-            <div> Asgaard sofa</div>
+        <section class="flex nav-container p1rem">
+            <div class="flex align-item-center page-name">
+                Home <span class="icon-container"><img src="./public/images/right.png" height="100%" width="100%"></span>
+            </div>
+            
+            <div class="flex align-item-center page-name">Shop <span class="icon-container"><img src="./public/images/right.png" height="100%" width="100%"></span></div>
+            
+            <div class="flex align-item-center"> <span class="icon-container"><img src="./public/images/line.png" height="100%" width="100%"></span>Asgaard sofa</div>
         </section>
         
-        <section></section>
+        <!-- information about product -->
+        <section class="flex p1rem space-around gap-1 flex-wrap">
+            
+            <!-- small image of sofa -->
+             <article class="flex gap-1">
+                 <div class="flex flex-col gap-1">
+                     <figure class="small-image-container">
+                         <img src="./public/images/small_img1.png" height="100%" width="100%">
+                     </figure>
+                     <figure class="small-image-container">
+                         <img src="./public/images/small_img2.png" height="100%" width="100%">
+                     </figure>
+                     <figure class="small-image-container">
+                         <img src="./public/images/small_img3.png" height="100%" width="100%">
+                     </figure>
+                     <figure class="small-image-container">
+                         <img src="./public/images/small_img2.png" height="100%" width="100%">
+                     </figure>
+                 </div>
+     
+                 <!-- big image of sofa-->
+                 <figure class="big-image-container">
+                     <img src="./public/images/sofa.png" height="100%" width="100%">
+                 </figure>
+
+             </article>
+
+            <article class="main-info">
+                <div class="item-name">
+                    <h3>Asgaard sofa</h3>
+                    <p class="secondary-p">Rs. 250,000.00</p>
+                </div>
+                
+                <div class="flex align-item-center">
+                    <img src="./public/images/stars.png" height="32px">
+                    <img src="./public/images/line.png" height="32px">
+                    <p class="secondary-p">5 customer review</p>
+                </div>
+                
+                <h4>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.</h4>
+
+                <div>
+                    <p class="secondary-p">Size</p>
+                    <div aria-label="sizes" class="flex gap-1">
+                        <div class="flex justify-center align-item-center bg-orange sizes-box">L</div>
+                        <div class="flex justify-center align-item-center bg-light-pink sizes-box">XL</div>
+                        <div class="flex justify-center align-item-center bg-light-pink sizes-box  ">XS</div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="secondary-p">Color</p>
+                    <div aria-label="sizes" class="flex gap-1">
+                        <div class="circle flex justify-center align-item-center bg-purple sizes-box"></div>
+                        <div class="circle flex justify-center align-item-center bg-black sizes-box"></div>
+                        <div class="circle flex justify-center align-item-center bg-orange sizes-box"></div>
+                    </div>
+                </div>
+
+                <div class="flex gap-1">
+                    <div class="counter-button flex outline-box justify-center align-item-center space-betwwen">
+                        <span><img src="./public/images/add.png"></span>
+                        <span>1</span>
+                        <span><img src="./public/images/minus.png"></span>
+                    </div>  
+                    <div class="flex justify-center align-item-center outline-box">
+                        <button>Add To Cart</button>
+                    </div>  
+                    <div class="outline-box">
+                        <button class="flex justify-center align-item-center gap-05"><span><img src="./public/images/add.png"></span>Compare</button>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div>
+                    <table>
+                        <tr class="secondary-p">
+                            <td>SKU</td>
+                            <td>: SS001</td>
+                        </tr>
+                        <tr class="secondary-p">
+                            <td>Category</td> 
+                            <td>: Safas</td>
+                        </tr>
+                        <tr class="secondary-p">
+                            <td>Tags</td>
+                            <td>: Sofa,Chair,Home,Shop</td>
+                        </tr>
+                        <tr class="secondary-p">
+                            <td>Share</td>
+                            <td>: SS001</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </article>
+        </section>
         <section></section>
 
     </main>

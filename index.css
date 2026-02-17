@@ -1,6 +1,12 @@
 *{
     --primary-bg-color:#F9F0E7;
-    --primary-text-color:#5F5F5F
+    --primary-text-color:#5F5F5F;
+    --secondary-text-color:#BEB9B1;
+    --heading-text-color:#2C2C2C;
+    --border-radius-8:8px
+}
+body{
+    margin: 0;
 }
 ul{
   /* list-style: none;   */
@@ -24,4 +30,88 @@ a{
 }
 .nav-container{
     background-color: var(--primary-bg-color);
+}
+.main-container{
+    /* padding: 1rem 2rem; */
+}
+.page-name{
+    color: var(--secondary-text-color);
+}
+figure{
+    margin: 0;
+}
+.big-image-container{
+    height: 40rem;
+    width:  40rem;
+    
+    & img{
+        object-fit: cover;
+        border-radius: var(--border-radius-8);
+    }
+}
+.small-image-container{
+    height: 9rem;
+    width:  9rem;
+
+    & img{
+        object-fit: cover;
+        border-radius: var(--border-radius-8);
+    }
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    & > p{
+        color: var(--secondary-text-color);
+    }
+    & > h4{
+        width: 55ch;
+        color: var(--heading-text-color);
+    } 
+}
+.sizes-box{
+    padding: 0.2rem;
+    color: black;
+    border-radius: 4px;
+    height: 1.5rem;
+    width:  1.5rem;
+
+    &:first-child{
+        color: white;
+    }
+}
+
+.circle{
+    border-radius: 50%;
+}
+.outline-box{
+    outline: 1.5px solid black;
+    padding: 0.5rem;
+    border-radius: var(--border-radius-8);
+
+    &  img{
+        height: 1.3rem;
+        width:  1.3rem;
+        cursor: pointer;
+    }
+
+    & > button{
+        background: none;
+        border: 0;
+        cursor: pointer;
+        font-size: medium;
+        min-width: 8rem;
+    }
+}
+.counter-button{
+    outline: 1px solid gray;
+    min-width: 5.8rem;
+}
+.item-name h3{
+    margin: 8px 0;
+}
+.item-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
