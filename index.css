@@ -46,6 +46,26 @@ a{
          gap:4rem;
     }
 }
+
+.navigation a{
+    &::after{
+        content: "*";
+        height: 2px;
+        width: 100%;
+        background-color: var(--primary-bg-color);
+
+        top: -50%;
+        bottom: -4px;
+        /* transform: translateX(-50%); */
+        transform-origin: center;
+        transition: width 0.2s linear;
+        
+    }
+    &:hover::after{
+        transform: translateX(-50%);
+    }
+}
+
 .header .navigation{
     font-weight: bold;
 }
@@ -130,8 +150,8 @@ span img{
     border-radius: var(--border-radius-8);
 
     &  img{
-        height: 1.3rem;
-        width:  1.3rem;
+        height: 0.9rem;
+        width:  0.9rem;
         cursor: pointer;
     }
 
@@ -183,6 +203,7 @@ span img{
     position: relative;
     background-color: var(--card-bg-color);
     border-radius: var(--border-radius-8);
+    box-shadow: 5px 5px 6px  grey;
     width: 20rem;
 
     & figure{
@@ -266,4 +287,8 @@ span img{
     right: 15px;
     padding: 1rem 0.5rem;
     color: white;
+}
+.description .big-image-container{
+    height: 40rem;
+    width: 40rem;
 }
