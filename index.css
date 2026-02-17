@@ -6,15 +6,25 @@
     --border-radius-8:8px;
     --large-font:20px;
     --section-padding:5rem;
+    --card-bg-color:#F4F5F7;
+    --color-orange:#B98E2F;
+    --color-purple:#826DFA;
+    --color-light-pink:#F9F0E7;
+    --link-color:#171717;
 }
 body{
     margin: 0;
 }
 ul{
   list-style: none;  
+  padding-left: 0;
+}
+li{
+    list-style: none;
 }
 a{
     text-decoration: none;
+    color: var(--link-color);
 }
 .logo-image-container{
     height: 5rem;
@@ -95,6 +105,9 @@ figure{
 .outline-box{
     outline: 1.5px solid black;
     padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background: none;
     border-radius: var(--border-radius-8);
 
     &  img{
@@ -128,7 +141,7 @@ figure{
     color: #5F5F5F;
 }
 .description .heading{
-
+    margin: 1.3rem 0rem;
 }
 .description .p-text{
     font-size: large;
@@ -136,4 +149,68 @@ figure{
 .description .paragraph-container{
     padding: 0rem 2rem;
 }
+.card{
+    background-color: var(--card-bg-color);
+    border-radius: var(--border-radius-8);
+    width: 25rem;
+    height: 35em;
 
+    & figure{
+        height: 70%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.card .card-info{
+    padding: 0.5rem;
+}
+.outline-button{
+    outline: 1.5px solid var(--color-orange);
+    padding: 0.5rem;
+    color: var(--color-orange);
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 1rem 3.5rem;
+}
+.footer-container{
+    padding: 0rem var(--section-padding);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 2fr;
+
+    & #address, & #links, & #help, & #newsletter{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    & #address div > p ,& #address > h4{
+        margin: 0.5rem 0rem;
+        gap: 0 !important;
+    }
+
+    & #help
+    {
+
+    }
+
+    & #newsletter{
+        & input{
+            border: none;
+            height: 2.5rem;
+            border-bottom: 2px solid black;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        & button{
+            border: none;
+            background: none;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+        }
+    }
+}

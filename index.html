@@ -171,7 +171,7 @@
                 <p class="secondary-p p-text">Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilbur is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs far a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
  </p>
             </article>
-            <div class="flex gap-1 space-around">
+            <div class="flex gap-1 space-around flex-wrap">
                 <div class="big-image-container">
                     <img src="./public/images/description_image.webp" alt="Image of description" height="100%" width="100%">
                 </div>
@@ -184,9 +184,143 @@
         <hr class="hr-line">
 
         <!-- List of product -->
+        <section class="flex flex-col gap-1">
+            <h2 class="flex justify-center">Related Products</h2>
+
+            <div class="flex flex-wrap gap-1 space-around">
+                <article class="card">
+                    <!-- imag -->
+                    <figure>
+                        <img src="./public/images/list_table.webp" alt="list item 1" height="100%" width="100%">
+                    </figure>
+
+                    <div class="card-info">
+                        <!-- heading -->
+                        <h4>Stltherine</h4>
+                        <!-- p -->
+                        <p>Stylish cafe chair</p>
+                    
+                        <!-- p -->
+                        <div class="flex align-item-center gap-1">
+                            <p>Rp 2,500.000</p>
+                            <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
+                        </div>
+                    </div>
+                </article>
+                
+               <article class="card">
+                    <!-- imag -->
+                    <figure>
+                        <img src="./public/images/list_chair.webp" alt="list item 1" height="100%" width="100%">
+                    </figure>
+
+                    <div class="card-info">
+                        <!-- heading -->
+                        <h4>Stltherine</h4>
+                        <!-- p -->
+                        <p>Stylish cafe chair</p>
+                    
+                        <!-- p -->
+                        <div class="flex align-item-center gap-1">
+                            <p>Rp 2,500.000</p>
+                            <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <!-- imag -->
+                    <figure>
+                        <img src="./public/images/list_sofa_table.webp" alt="list item 1" height="100%" width="100%">
+                    </figure>
+
+                    <div class="card-info">
+                        <!-- heading -->
+                        <h4>Stltherine</h4>
+                        <!-- p -->
+                        <p>Stylish cafe chair</p>
+                    
+                        <!-- p -->
+                        <div class="flex align-item-center gap-1">
+                            <p>Rp 2,500.000</p>
+                            <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <!-- imag -->
+                    <figure>
+                        <img src="./public/images/list_sofa.webp" alt="list item 1" height="100%" width="100%">
+                    </figure>
+
+                    <div class="card-info">
+                        <!-- heading -->
+                        <h4>Stltherine</h4>
+                        <!-- p -->
+                        <p>Stylish cafe chair</p>
+                    
+                        <!-- p -->
+                        <div class="flex align-item-center gap-1">
+                            <p>Rp 2,500.000</p>
+                            <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="flex justify-center">
+                <button class="outline-button">Show More</button>
+            </div>
+
+        </section>
 
     </main>
-    <!-- three sections are there -->
+    <hr>
+    <footer class="footer-container">
 
+        <section class="footer">
+            <div id="address">
+                <h4>Funiro.</h4>
+                <div>
+                    <p>400 Univerity Drive Suite 200 Caral</p>
+                    <p>Gables,</p>
+                    <p>FL 33134 USA</p>
+                </div>
+            </div>
+            
+            <!-- Links -->
+            <div id="links">
+                <p class="secondary-p">Links</p>
+                <!-- <ul> -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                <!-- </ul> -->
+            </div>
+            
+            <!-- Help -->
+            <div id="help">
+                <p class="secondary-p">Help</p>
+                <!-- <ul> -->
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policies</a></li>
+                <!-- </ul> -->
+            </div>
+            
+            <!-- Newsletter -->
+            <div id="newsletter">
+                <p class="secondary-p">Newsletter</p>
+                <div class="flex gap-05">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <p>2023 funrino. All rights reverved</p>
+    </footer>
 </body>
 </html>
