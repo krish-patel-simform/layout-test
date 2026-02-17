@@ -1,0 +1,27 @@
+*{
+    --primary-bg-color:#F9F0E7;
+    --primary-text-color:#5F5F5F
+}
+ul{
+  /* list-style: none;   */
+}
+a{
+    text-decoration: none;
+}
+.logo-image-container{
+    height: 5rem;
+    width: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+}
+.icon-container{
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+.nav-container{
+    background-color: var(--primary-bg-color);
+}
