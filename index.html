@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro</title>
+    
+    <meta name="description" content="Furniro is a modern furniture selling website offering stylish, high-quality sofas, beds, dining sets, and home décor with easy online shopping and fast delivery.">    
 
     <link rel="stylesheet" href="./index.css">
-    <!-- <link rel="icon" href="https://www/furniro.store/favicon.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="./util.css">
+
+    !-- open graph tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Furniro Modern Furniture for Modern Living" />
+    <meta property="og:description" content="Furniro is a modern furniture selling website offering stylish, high-quality sofas, beds, dining sets, and home décor with easy online shopping and fast delivery." />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="./public/images/logo_1.png" />
+    <meta property="og:site_name" content="Furniro" />
 
 </head>
 <body>  
     
     <header class="header">
             <span class="logo-image-container">
-                <img src="./public/images/logo_1.png" height="100%" width="100%">
+                <img src="./public/images/logo_1.png" height="100%" width="100%" alt="funrio logo">
             </span>
             <nav class="flex">
                 <ul class="flex  space-between align-item-center navigation">
@@ -25,10 +34,10 @@
                 </ul>
             </nav>
             <ul class="flex gap-2 align-item-center">
-                <li><span class="icon-container"><img src="./public/images/user.svg"  height="100%" width="100%"></span></li>
-                <li><span class="icon-container" ><img src="./public/images/heart.png" height="100%" width="100%"></span></li>
-                <li><span class="icon-container" ><img src="./public/images/search_icon.png" height="100%" width="100%"></span></li>
-                <li><span class="icon-container" ><img src="./public/images/store.svg"  height="100%" width="100%"></span></li>
+                <li><span class="icon-container"><img src="./public/images/user.svg"  height="100%" width="100%" alt="user icon"></span></li>
+                <li><span class="icon-container" ><img src="./public/images/heart.png" height="100%" width="100%" alt="heart icon"></span></li>
+                <li><span class="icon-container" ><img src="./public/images/search_icon.png" height="100%" width="100%" alt="search icon"></span></li>
+                <li><span class="icon-container" ><img src="./public/images/store.svg" alt="store icon" height="100%" width="100%"></span></li>
             </ul>
     </header>
     
@@ -37,12 +46,15 @@
         <!-- section 1 -->
         <section class="flex nav-container gap-1">
             <div class="flex gap-05 align-item-center page-name">
-                Home <span class="icon-container"><img src="./public/images/right.png" height="100%" width="100%"></span>
+                <p class="pointer">
+                    Home
+                </p>
+                 <span class="icon-container"><img src="./public/images/right.png" alt="right arrow icon" height="100%" width="100%"></span>
             </div>
             
-            <div class="flex gap-05 align-item-center page-name">Shop <span class="icon-container"><img src="./public/images/right.png" height="100%" width="100%"></span></div>
+            <div class="flex gap-05 align-item-center page-name"><p class="pointer">Shop</p> <span class="icon-container"><img src="./public/images/right.png" alt="right arrow" height="100%" width="100%"></span></div>
             
-            <div class="flex align-item-center"> <span class="icon-container"><img src="./public/images/line.png" height="100%" width="100%"></span>Asgaard sofa</div>
+            <div class="flex align-item-center"> <span class="icon-container"><img alt="straight line" src="./public/images/line.png" height="100%" width="100%"></span><p>Asgaard sofa</p></div>
         </section>
         
         <!-- information about product -->
@@ -52,22 +64,22 @@
              <article class="flex gap-1">
                  <div class="flex flex-col gap-1">
                      <figure class="small-image-container">
-                         <img src="./public/images/small_img1.png" height="100%" width="100%">
+                         <img alt="product image 1" src="./public/images/small_img1.png" height="100%" width="100%">
                      </figure>
                      <figure class="small-image-container">
-                         <img src="./public/images/small_img2.png" height="100%" width="100%">
+                         <img alt="product image 2" src="./public/images/small_img2.png" height="100%" width="100%">
                      </figure>
                      <figure class="small-image-container">
-                         <img src="./public/images/small_img3.png" height="100%" width="100%">
+                         <img alt="product image 3" src="./public/images/small_img3.png" height="100%" width="100%">
                      </figure>
                      <figure class="small-image-container">
-                         <img src="./public/images/small_img2.png" height="100%" width="100%">
+                         <img alt="product image 4" src="./public/images/small_img2.png" height="100%" width="100%">
                      </figure>
                  </div>
      
                  <!-- big image of sofa-->
                  <figure class="big-image-container">
-                     <img src="./public/images/sofa.png" height="100%" width="100%">
+                     <img alt="product image" src="./public/images/sofa.png" height="100%" width="100%">
                  </figure>
 
              </article>
@@ -79,8 +91,8 @@
                 </div>
                 
                 <div class="flex align-item-center">
-                    <img src="./public/images/stars.png" height="32px">
-                    <img src="./public/images/line.png" height="32px">
+                    <img alt="product rating" src="./public/images/stars.png" height="32px">
+                    <img alt="straight line" src="./public/images/line.png" height="32px">
                     <p class="secondary-p">5 customer review</p>
                 </div>
                 
@@ -106,15 +118,15 @@
 
                 <div class="flex gap-1 mt-1">
                     <div class="counter-button flex outline-box justify-center align-item-center space-betwwen">
-                        <img src="./public/images/add.png" height="21px" width="audio">
+                        <img alt="add icon" src="./public/images/add.png" height="21px" width="audio">
                         <span>1</span>
-                        <img src="./public/images/minus.png" height="21px" width="audio">
+                        <img alt="minus icon" src="./public/images/minus.png" height="21px" width="audio">
                     </div>  
                     <div class="flex justify-center align-item-center outline-box">
                         <button>Add To Cart</button>
                     </div>  
                     <div class="outline-box">
-                        <button class="flex justify-center align-item-center gap-05"><img src="./public/images/add.png">Compare</button>
+                        <button class="flex justify-center align-item-center gap-05"><img alt="add icon" src="./public/images/add.png">Compare</button>
                     </div>
                 </div>
 
@@ -136,16 +148,16 @@
                         </tr>
                         <tr class="secondary-p">
                             <td>Share</td>
-                            <td class="flex gap-05 align-item-center">
+                            <td class="flex gap-1 align-item-center">
                                 <p>: </p>
-                                <a href="#">
-                                    <img class="share-icon" src="./public/images/facebook.png" height="20px" width="20px">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img class="share-icon" src="./public/images/facebook.png" alt="facebook.com">
                                 </a>
-                                <a href="#">
-                                    <img class="share-icon" src="./public/images/linkedin.png" height="" width="">
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <img class="share-icon" src="./public/images/linkedin.png" alt="linkedin.com">
                                 </a>
-                                <a href="#">
-                                    <img class="share-icon" src="./public/images/twitter.png" height="" width="">
+                                <a href="https://www.x.com/" target="_blank">
+                                    <img class="share-icon" src="./public/images/twitter.png" alt="x.com">
                                 </a>
                             </td>
                         </tr>
@@ -218,20 +230,19 @@
 
                     <div class="card-info">
                         <!-- heading -->
-                        <h4>Stltherine</h4>
+                        <h4>Leviosa</h4>
                         <!-- p -->
                         <p>Stylish cafe chair</p>
                     
                         <!-- p -->
                         <div class="flex align-item-center gap-1">
                             <p>Rp 2,500.000</p>
-                            <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
                         </div>
                     </div>
                 </article>
                 
                 <article class="card">
-                    <div id="discount" class="circle bg-purple">-30%</div>
+                    <div id="discount" class="circle bg-purple">-50%</div>
                     <!-- imag -->
                     <figure>
                         <img src="./public/images/list_sofa_table.webp" alt="list item 1" height="100%" width="100%">
@@ -239,14 +250,14 @@
 
                     <div class="card-info">
                         <!-- heading -->
-                        <h4>Stltherine</h4>
+                        <h4>Lolito</h4>
                         <!-- p -->
-                        <p>Stylish cafe chair</p>
+                        <p>Luxury big sofa</p>
                     
                         <!-- p -->
                         <div class="flex align-item-center gap-1">
-                            <p>Rp 2,500.000</p>
-                            <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
+                            <p>Rp 7.000.000</p>
+                            <p class="secondary-p"><strike>Rp 14.000.000</strike></p>
                         </div>
                     </div>
                 </article>
@@ -260,14 +271,13 @@
 
                     <div class="card-info">
                         <!-- heading -->
-                        <h4>Stltherine</h4>
+                        <h4>Respira</h4>
                         <!-- p -->
-                        <p>Stylish cafe chair</p>
+                        <p>Outdoor bar table and stool</p>
                     
                         <!-- p -->
                         <div class="flex align-item-center gap-1">
-                            <p>Rp 2,500.000</p>
-                            <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
+                            <p>Rp 500.000</p>
                         </div>
                     </div>
                 </article>
@@ -295,22 +305,22 @@
             <!-- Links -->
             <div id="links">
                 <p class="secondary-p">Links</p>
-                <!-- <ul> -->
+                <ul class="flex flex-col gap-1">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                <!-- </ul> -->
+                </ul>
             </div>
             
             <!-- Help -->
             <div id="help">
                 <p class="secondary-p">Help</p>
-                <!-- <ul> -->
+                <ul class="flex flex-col gap-1">
                     <li><a href="#">Payment Options</a></li>
                     <li><a href="#">Returns</a></li>
                     <li><a href="#">Privacy Policies</a></li>
-                <!-- </ul> -->
+                </ul>
             </div>
             
             <!-- Newsletter -->
