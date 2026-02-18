@@ -81,6 +81,7 @@ p{
     height: 24px;
     width: 24px;
     display: inline-block;
+    cursor: pointer;
 }
 .nav-container{
     background-color: var(--primary-bg-color);
@@ -151,7 +152,6 @@ figure{
     outline: 1.5px solid black;
     padding: 0.5rem;
     border: none;
-    cursor: pointer;
     background: none;
     border-radius: var(--border-radius-8);
 
@@ -187,7 +187,6 @@ figure{
     cursor: pointer;
 }
 .hr-line{
-    width: 100%;
     color: #5F5F5F;
 }
 .description .heading{
@@ -212,6 +211,7 @@ figure{
     box-shadow: -5px 5px 6px #d4d4d6;
     width: 20rem;
     overflow: hidden;
+    cursor: pointer;
 
     & figure{
         height: 18.5rem;
@@ -244,6 +244,13 @@ figure{
     cursor: pointer;
     background: none;
     padding: 1rem 3.5rem;
+    transition: all 0.5s ease;
+
+    &:hover{
+        outline: 1.5px solid var(--color-dark-pink);
+        color: var(--color-dark-pink);
+        transform: scale(1.05);
+    }
 }
 .footer-container{
     padding: 0rem var(--section-padding);
@@ -284,6 +291,7 @@ figure{
             border-bottom: 2px solid black;
             cursor: pointer;
             transition: all 0.2s ease;
+            letter-spacing: 1px;
             &:hover{
                 color: var(--color-dark-pink);
                 border-bottom-color: var(--color-dark-pink) ;
@@ -297,9 +305,12 @@ figure{
     height: 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+    line-height: 1;
     top: 15px;
     right: 15px;
-    padding: 1rem 0.5rem;
+    height: 55px;
+    width:  55px;
     color: white;
 }
 .description .big-image-container{
