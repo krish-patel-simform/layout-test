@@ -8,7 +8,6 @@
     <meta name="description" content="Furniro is a modern furniture selling website offering stylish, high-quality sofas, beds, dining sets, and home décor with easy online shopping and fast delivery.">    
 
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./util.css">
     <link rel="icon" type="image/png" href="./public/images/logo.png">
 
     <!-- open graph tags -->
@@ -26,15 +25,19 @@
             <span class="logo-image-container">
                 <img src="./public/images/logo_1.png" height="100%" width="100%" alt="funrio logo">
             </span>
-            <nav class="flex">
-                <ul class="flex  space-between align-item-center navigation">
+            <nav class="navigation-container">
+                <ul class="
+                
+                <!-- flex  space-between align-item-center  -->
+                
+                navigation">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <ul class="flex gap-2 align-item-center">
+            <ul>
                 <li><span class="icon-container"><img src="./public/images/user.svg"  height="100%" width="100%" alt="user icon"></span></li>
                 <li><span class="icon-container" ><img src="./public/images/heart.png" height="100%" width="100%" alt="heart icon"></span></li>
                 <li><span class="icon-container" ><img src="./public/images/search_icon.png" height="100%" width="100%" alt="search icon"></span></li>
@@ -45,25 +48,25 @@
     <main class="main-container">
 
         <!-- section 1 -->
-        <section class="flex nav-container gap-1">
-            <div class="flex gap-05 align-item-center page-name">
+        <section class="nav-container">
+            <div class="page-name">
                 <p class="pointer">
                     Home
                 </p>
                  <span class="icon-container"><img src="./public/images/right.png" alt="right arrow icon" height="100%" width="100%"></span>
             </div>
             
-            <div class="flex gap-05 align-item-center page-name"><p class="pointer">Shop</p> <span class="icon-container"><img src="./public/images/right.png" alt="right arrow" height="100%" width="100%"></span></div>
+            <div class="page-name"><p class="pointer">Shop</p> <span class="icon-container"><img src="./public/images/right.png" alt="right arrow" height="100%" width="100%"></span></div>
             
-            <div class="flex align-item-center"> <span class="icon-container"><img alt="straight line" src="./public/images/line.png" height="100%" width="100%"></span><p>Asgaard sofa</p></div>
+            <div class="page-name"> <span class="icon-container"><img alt="straight line" src="./public/images/line.png" height="100%" width="100%"></span><p>Asgaard sofa</p></div>
         </section>
         
         <!-- information about product -->
-        <section class="flex p1rem space-betwwen gap-1 flex-wrap  ">
+        <section class="product-information-container">
             
             <!-- small image of sofa -->
-             <article class="flex gap-1">
-                 <div class="flex flex-col gap-1">
+             <article class="product-images">
+                 <div>
                      <figure class="small-image-container">
                          <img alt="product image 1" src="./public/images/small_img1.png" height="100%" width="100%">
                      </figure>
@@ -91,7 +94,7 @@
                     <p class="secondary-p">Rs. 250,000.00</p>
                 </div>
                 
-                <div class="flex align-item-center">
+                <div class="product-review">
                     <img alt="product rating" src="./public/images/stars.png" height="32px">
                     <img alt="straight line" src="./public/images/line.png" height="32px">
                     <p class="secondary-p">5 customer review</p>
@@ -101,33 +104,33 @@
 
                 <div>
                     <p class="secondary-p">Size</p>
-                    <div aria-label="sizes" class="flex gap-1">
-                        <div aria-label="large" class="flex justify-center align-item-center bg-orange sizes-box pointer">L</div>
-                        <div aria-label="Xtra large" class="flex justify-center align-item-center bg-light-pink pointer sizes-box">XL</div>
-                        <div aria-label="Xtra Small" class="pointer flex justify-center align-item-center bg-light-pink sizes-box  ">XS</div>
+                    <div aria-label="sizes" class="sizes-container">
+                        <div aria-label="large" class="bg-orange sizes-box pointer">L</div>
+                        <div aria-label="Xtra large" class="bg-light-pink pointer sizes-box">XL</div>
+                        <div aria-label="Xtra Small" class="pointer bg-light-pink sizes-box  ">XS</div>
                     </div>
                 </div>
 
                 <div>
                     <p class="secondary-p">Color</p>
-                    <div aria-label="sizes" class="flex gap-1">
-                        <div class="pointer circle flex justify-center align-item-center bg-purple sizes-box"></div>
-                        <div class="pointer circle flex justify-center align-item-center bg-black sizes-box"></div>
-                        <div class="pointer circle flex justify-center align-item-center bg-orange sizes-box"></div>
+                    <div aria-label="sizes" class="sizes-container">
+                        <div class="pointer circle bg-purple sizes-box"></div>
+                        <div class="pointer circle bg-black sizes-box"></div>
+                        <div class="pointer circle bg-orange sizes-box"></div>
                     </div>
                 </div>
 
-                <div class="flex gap-1 mt-1">
-                    <div class="counter-button flex outline-box justify-center align-item-center space-betwwen">
-                        <img alt="add icon" src="./public/images/add.png" height="21px" width="audio">
+                <div class="btn-container">
+                    <div class="counter-button outline-box">
+                        <img alt="add icon" src="./public/images/add.png" height="21px" width="auto">
                         <span>1</span>
-                        <img alt="minus icon" src="./public/images/minus.png" height="21px" width="audio">
+                        <img alt="minus icon" src="./public/images/minus.png" height="21px" width="auto">
                     </div>  
-                    <div class="flex justify-center align-item-center outline-box">
+                    <div class="outline-box">
                         <button>Add To Cart</button>
                     </div>  
                     <div class="outline-box">
-                        <button class="flex justify-center align-item-center gap-05"><img alt="add icon" src="./public/images/add.png">Compare</button>
+                        <button ><img alt="add icon" src="./public/images/add.png">Compare</button>
                     </div>
                 </div>
 
@@ -149,7 +152,7 @@
                         </tr>
                         <tr class="secondary-p">
                             <td>Share</td>
-                            <td class="flex gap-1 align-item-center">
+                            <td class="share-icon-container">
                                 <p>: </p>
                                 <a href="https://www.facebook.com/" target="_blank">
                                     <img class="share-icon" src="./public/images/facebook.png" alt="facebook.com">
@@ -171,20 +174,22 @@
         <hr class="hr-line">
 
         <!-- Descriptiona nd additional information -->
-        <section class="description flex flex-col gap-2">
-            <article class="flex space-around">
+        <section class="description">
+            
+            <article class="heading-container">
                 <h2 class="heading">Description</h2>
                 <h2 class="secondary-p heading">Additional Information</h2>
                 <h2 class="secondary-p heading">Reviews [5]</h2>
             </article>
 
             <article class="paragraph-container">
-                <p class="secondary-p p-text">Embodying the raw, wayward spirit of rock in' roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road</p>
+                <p>Embodying the raw, wayward spirit of rock in' roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road</p>
                 
-                <p class="secondary-p p-text">Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilbur is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs far a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
+                <p>Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilbur is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs far a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
  </p>
             </article>
-            <div class="flex gap-1 space-around flex-wrap">
+            
+            <div class="description-images">
                 <div class="big-image-container">
                     <img src="./public/images/description_image.webp" alt="Image of description" height="100%" width="100%">
                 </div>
@@ -192,15 +197,16 @@
                     <img src="./public/images/description_image.webp" alt="Image of description" height="100%" width="100%">
                 </div>
             </div>
+
         </section>
 
         <hr class="hr-line">
 
         <!-- List of product -->
-        <section class="flex flex-col gap-2">
-            <h2 class="flex justify-center">Related Products</h2>
+        <section class="product-list-container">
+            <h2>Related Products</h2>
 
-            <div class="flex flex-wrap gap-1 space-betwwen">
+            <div class="card-container">
                 <article class="card">
                     <div id="discount" class="circle bg-purple">-30%</div>
                     <!-- imag -->
@@ -215,7 +221,7 @@
                         <p>Stylish cafe chair</p>
                     
                         <!-- p -->
-                        <div class="flex align-item-center gap-1">
+                        <div>
                             <p>Rp 2,500.000</p>
                             <p class="secondary-p"><strike>Rp 3,500.000</strike></p>
                         </div>
@@ -283,7 +289,7 @@
                     </div>
                 </article>
             </div>
-            <div class="flex justify-center">
+            <div class="product-list-more">
                 <button class="outline-button">Show More</button>
             </div>
 
@@ -306,7 +312,7 @@
             <!-- Links -->
             <div id="links">
                 <p class="secondary-p">Links</p>
-                <ul class="flex flex-col gap-1">
+                <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About</a></li>
@@ -317,7 +323,7 @@
             <!-- Help -->
             <div id="help">
                 <p class="secondary-p">Help</p>
-                <ul class="flex flex-col gap-1">
+                <ul>
                     <li><a href="#">Payment Options</a></li>
                     <li><a href="#">Returns</a></li>
                     <li><a href="#">Privacy Policies</a></li>
@@ -327,7 +333,7 @@
             <!-- Newsletter -->
             <div id="newsletter">
                 <p class="secondary-p">Newsletter</p>
-                <div class="flex gap-05">
+                <div>
                     <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
                     <button>SUBSCRIBE</button>
                 </div>
